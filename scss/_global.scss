@@ -1,0 +1,172 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+body {
+  @include serif-font;
+}
+
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: $theme-primary2;
+}
+
+hr.light {
+  border-color: #eed9e0;
+}
+
+hr.black {
+  border-color: #eed9e0;
+}
+
+a {
+  color: $theme-primary2;
+  @include transition-all;
+  &:focus,
+  &:hover {
+    color: darken($theme-primary2, .1);
+  }
+}
+
+/*@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}*/
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h3,
+h4,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2,
+h5 {
+  padding-left: 5px;
+  color: black;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+h5-2 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  font-size: 12px;
+}
+
+p {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+.white-popup-block {
+  background: #FFF;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 650px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.bg-primary {
+  background-color: black !important;
+}
+
+.bg-dark {
+  color: white;
+  background-color: white !important;
+}
+
+.bold {
+  font-weight: 700px;
+}
+
+.center-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30%;
+  padding-bottom: 10%;
+}
+
+.center-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30%;
+}
+
+.text-faded {
+  color: fade-out(white, .3);
+}
+
+.background-set1 {
+  background-color: #fff8f8;
+}
+
+.background-set2 {
+  background-color: #543d54;
+}
+
+section {
+}
+
+.section-heading {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  color: white;
+  background: $gray-darker;
+  text-shadow: none;
+}
+
+::selection {
+  color: gray;
+  background: $gray-darker;
+  text-shadow: none;
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+img::selection {
+  color: white;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: white;
+  background: transparent;
+}
+
+body {
+  -webkit-tap-highlight-color: $gray-darker;
+}
+
+
+
+

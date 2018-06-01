@@ -1,0 +1,99 @@
+// Styling for the navbar
+#mainNav {
+  border-color: white;
+  background-color: transparent;
+  @include sans-serif-font;
+  @include transition-all;
+  .navbar-brand {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #D97B8D;
+    @include sans-serif-font;
+    &:focus,
+    &:hover {
+      color: white;
+    }
+  }
+  .separator {
+    padding-top: 5px;
+    color: white;
+  }
+  .navbar-toggle {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+  }
+  .navbar-nav {
+    > li.nav-item {
+       > a.nav-link:focus,
+      > a.nav-link {
+        /*This is for the responsive mode of the code, sandiwch 3 bar*/
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #543d54;
+        &:hover {
+          color: #D97B8D;
+        }
+        &.active {
+          color: #D97B8D !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    border-color: fade-out(#543d54, .7);
+    background-color: transparent;
+    .navbar-brand {
+      color: fade-out(#543d54, .3);
+      &:focus,
+      &:hover {
+        color: #D97B8D;
+      }
+    }
+    /*This part of the code controls the header and the colors*/
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      color: white;
+      &:hover {
+        color: #D97B8D;
+      }
+    }
+    &.navbar-shrink {
+      border-color: white;
+      background-color: #fff8f8;
+      .navbar-brand {
+        font-size: 16px;
+        color: white;
+        &:focus,
+        &:hover {
+          color: darken(#D97B8D, .1);
+        }
+      }
+      .navbar-nav > li.nav-item > a.nav-link,
+      .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: black;
+        &:hover {
+          color: #D97B8D
+        }
+      }
+    }
+  }
+  .logo img {
+    color: black;
+    max-height: 75%;
+    max-width: 75%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    &:hover {
+     transform: scale(1.1);
+    }
+  }
+}
+
